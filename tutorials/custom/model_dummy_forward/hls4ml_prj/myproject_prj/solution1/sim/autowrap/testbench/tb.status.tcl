@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_forward/hls4ml_prj/myproject_prj/solution1/./sim/autowrap/testbench/myproject.cpp_pre.cpp.tb.cpp

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T01:42:17.359-0600"/>
+        <logs message="@E Simulation failed." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T01:42:17.354-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T01:39:21.355-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T01:37:04.219-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T01:21:23.181-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T01:18:45.820-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T01:13:28.661-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T01:12:40.572-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T00:49:26.313-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T23:25:33.465-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T23:07:21.587-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T23:07:03.430-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T23:04:12.035-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T23:01:06.782-0600"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T22:59:23.748-0600"/>
+        <logs message="@E Simulation failed: SIGSEGV." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T22:59:23.744-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T22:56:01.946-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T22:53:58.636-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T22:51:20.859-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T22:48:40.074-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T22:47:34.311-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T22:46:06.408-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T22:43:25.296-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T22:36:13.784-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T22:35:40.657-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T22:34:26.952-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T22:33:12.385-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T22:32:33.990-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T22:31:22.840-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T22:29:41.138-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T22:29:20.509-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T22:26:50.310-0600"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-223] Checking resource limit in 'dense_latency&lt;ap_fixed,ap_fixed,config2>.0.0': cannot find any operation of 'mul'." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T16:51:52.914-0600" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'linear&lt;ap_fixed,ap_fixed&lt;16,6,0,0,0>,linear_config3>' to 'linear_ap_fixed_ap_fixed_16_6_0_0_0_linear_config3_s'." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T16:51:52.909-0600" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'dense_latency&lt;ap_fixed,ap_fixed,config2>.0.0' to 'dense_latency_ap_fixed_ap_fixed_config2_0_0'." projectName="myproject_prj" solutionName="solution1" date="2023-01-30T16:51:52.905-0600" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'nnet::dense_latency&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>.0.0' to 'dense_latency&lt;ap_fixed,ap_fixed,config2>.0.0' (firmware/nnet_utils/nnet_dense_latency.h:45:1)" projectName="myproject_prj" solutionName="solution1" date="2023-01-30T16:51:52.901-0600" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'nnet::linear&lt;ap_fixed&lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed&lt;16, 6, (ap_q_mode)0, (ap_o_mode)0, 0>, linear_config3>' to 'linear&lt;ap_fixed,ap_fixed&lt;16,6,0,0,0>,linear_config3>' (firmware/nnet_utils/nnet_activation.h:51:1)" projectName="myproject_prj" solutionName="solution1" date="2023-01-30T16:51:52.843-0600" type="Warning"/>
+        <logs message="WARNING: [HLS 200-471] Dataflow form checks found 3 issue(s) in file firmware/myproject.cpp" projectName="myproject_prj" solutionName="solution1" date="2023-01-30T16:51:49.518-0600" type="Warning"/>
+        <logs message="WARNING: [HLS 214-104] Only for-loops and functions support the dataflow: firmware/nnet_utils/nnet_dense_latency.h:76:9" projectName="myproject_prj" solutionName="solution1" date="2023-01-30T16:51:40.491-0600" type="Warning"/>
+        <logs message="WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: firmware/nnet_utils/nnet_dense_latency.h:79:2" projectName="myproject_prj" solutionName="solution1" date="2023-01-30T16:51:40.488-0600" type="Warning"/>
+        <logs message="WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: firmware/nnet_utils/nnet_dense_latency.h:64:9" projectName="myproject_prj" solutionName="solution1" date="2023-01-30T16:51:40.484-0600" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

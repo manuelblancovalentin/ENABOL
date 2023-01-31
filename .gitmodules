@@ -1,0 +1,3 @@
+[submodule "tutorials/hls4ml-tutorial"]
+	path = tutorials/hls4ml-tutorial
+	url = https://github.com/fastmachinelearning/hls4ml-tutorial
