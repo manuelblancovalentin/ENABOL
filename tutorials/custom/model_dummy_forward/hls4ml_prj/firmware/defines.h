@@ -27,7 +27,4 @@ typedef ap_fixed<128,64> weight2_t;
 typedef ap_uint<1> bias2_t;
 typedef ap_fixed<128,64,AP_RND,AP_SAT> result_t;
 
-// [@manuelbv]: Added learning rate here
-#define LEARNING_RATE 0.01
-
 #endif

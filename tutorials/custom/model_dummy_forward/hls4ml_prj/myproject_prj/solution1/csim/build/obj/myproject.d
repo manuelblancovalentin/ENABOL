@@ -22,7 +22,11 @@ obj/myproject.o: ../../../../firmware/myproject.cpp \
  /fpga/cad/xilinx/Vivado/2019.2/include/hls_stream.h \
  ../../../../firmware/defines.h \
  ../../../../firmware/nnet_utils/nnet_types.h \
- ../../../../firmware/losses/mse.h ../../../../firmware/parameters.h \
+ ../../../../firmware/autograd/autograd_defines.h \
+ ../../../../firmware/losses/mse.h \
+ ../../../../firmware/autograd/nnet_activation_backprop.h \
+ ../../../../firmware/autograd/nnet_dense_backprop.h \
+ ../../../../firmware/parameters.h \
  ../../../../firmware/nnet_utils/nnet_helpers.h \
  ../../../../firmware/nnet_utils/nnet_activation.h \
  ../../../../firmware/nnet_utils/nnet_common.h \
@@ -38,4 +42,6 @@ obj/myproject.o: ../../../../firmware/myproject.cpp \
  ../../../../firmware/nnet_utils/nnet_dense_compressed.h \
  ../../../../firmware/nnet_utils/nnet_dense.h \
  ../../../../firmware/nnet_utils/nnet_dense_stream.h \
- ../../../../firmware/weights/w2.h ../../../../firmware/weights/b2.h
+ ../../../../firmware/weights/w2.h ../../../../firmware/weights/b2.h \
+ ../../../../firmware/losses/losses_parameters.h \
+ ../../../../firmware/losses/mse.h

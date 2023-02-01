@@ -7,6 +7,15 @@
       <mgLog/>
       <packageLog/>
       <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T17:52:09.142-0600"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T17:27:53.132-0600"/>
+        <logs message="@E Simulation failed: SIGSEGV." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T17:27:53.126-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T17:26:55.409-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T17:24:22.299-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T17:17:34.548-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T16:56:25.496-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T16:56:02.333-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T16:46:40.092-0600"/>
         <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T01:42:17.359-0600"/>
         <logs message="@E Simulation failed." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T01:42:17.354-0600"/>
         <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="myproject_prj" solutionName="solution1" date="2023-01-31T01:39:21.355-0600"/>

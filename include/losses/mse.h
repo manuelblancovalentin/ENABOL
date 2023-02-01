@@ -67,10 +67,10 @@ struct mse_config
 
             // Init grad 
             grad[ii] = -(divergences[ii]);
-            std::cout << "cache1 (preds): " << cache1 << std::endl;
-            std::cout << "cache2 (ground): " << cache2 << std::endl;
-            std::cout << "divergences: " << divergences[ii] << std::endl;
-            std::cout << "grad: " << grad[ii] << std::endl;
+            // std::cout << "cache1 (preds): " << cache1 << std::endl;
+            // std::cout << "cache2 (ground): " << cache2 << std::endl;
+            // std::cout << "divergences: " << divergences[ii] << std::endl;
+            // std::cout << "grad: " << grad[ii] << std::endl;
         }
 
         // Reset loss to 0
@@ -87,7 +87,7 @@ struct mse_config
 
         // Divide by 1/2 (the reason behind this is that the 2 exponent in the mse cancels out when differentiating during backprop)
         loss = static_cast<res_T>(0.5)*loss;
-        std::cout << "loss: " << loss << std::endl;
+        //std::cout << "loss: " << loss << std::endl;
 
 
         // Result: for(int ires = 0; ires < CONFIG_T::n_out; ires++){

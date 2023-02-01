@@ -30,6 +30,9 @@
 
 //hls-fpga-machine-learning insert bram
 
+// [@manuelbv]: Add trainer helpers
+#include "firmware/autograd/trainer_helpers.h"
+
 #define CHECKPOINT 1
 
 namespace nnet {
@@ -59,10 +62,22 @@ int main(int argc, char **argv)
   std::string iline;
   std::string pline;
   int e = 0;
+  
+  // [@manuelbv]: Definition of epoch
+  int epoch = 0;
+
+  // [@manuelbv]: Print header for table
+  autograd::print_trainer_table_header();
 
   if (fin.is_open() && fpr.is_open()) {
     while ( std::getline(fin,iline) && std::getline (fpr,pline) ) {
-      if (e % CHECKPOINT == 0) std::cout << "Processing input " << e << std::endl;
+      if (e % CHECKPOINT == 0) {
+        // [@manuelbv]: Print input (sample) number
+        printf("| %.10d |", e);
+        printf(" %.10d |", epoch);
+        printf(" %.10u |", BATCH_SIZE);
+        //std::cout << "Processing input " << e << std::endl;
+      }
       char* cstr=const_cast<char*>(iline.c_str());
       char* current;
       std::vector<float> in;
@@ -101,26 +116,46 @@ int main(int argc, char **argv)
       flosses << loss << " ";
 
       if (e % CHECKPOINT == 0) {
+        
+        // Loss
+        //std::cout << "Loss: " << loss << std::endl;
+        printf(" %.10s |", loss.to_string(10, true).c_str());
 
-        std::cout << "Inputs" << std::endl;
-        for(int i = 0; i < N_INPUT_1_1; i++) {
-          std::cout << in[i] << " ";
+        // [@manuelbv]: Custom printing
+        if ( N_INPUT_1_1 > 0 ) {
+          // Input
+          printf(" %.10s |", fc1_input[0].to_string(10, true).c_str());
         }
+        
+        if ( N_LAYER_2 > 0 ) {
+          // Prediction
+          printf(" %.10s |", layer3_out[0].to_string(10, true).c_str());
+
+          // Ground truth
+          printf(" %.8f |", pr[0]);
+        }
+
         std::cout << std::endl;
 
-        std::cout << "Predictions" << std::endl;
-        //hls-fpga-machine-learning insert predictions
-        for(int i = 0; i < N_LAYER_2; i++) {
-          std::cout << pr[i] << " ";
-        }
-        std::cout << std::endl;
-        std::cout << "Quantized predictions" << std::endl;
+        //std::cout << "Inputs" << std::endl;
+        //for(int i = 0; i < N_INPUT_1_1; i++) {
+          //std::cout << in[i] << " ";
+        //}
+        //std::cout << std::endl;
+
+        // std::cout << "Predictions" << std::endl;
+        // //hls-fpga-machine-learning insert predictions
+        // for(int i = 0; i < N_LAYER_2; i++) {
+        //   std::cout << pr[i] << " ";
+        // }
+        // std::cout << std::endl;
+        //std::cout << "Quantized predictions" << std::endl;
         //hls-fpga-machine-learning insert quantized
-        nnet::print_result<result_t, N_LAYER_2>(layer3_out, std::cout, true);
+        //nnet::print_result<result_t, N_LAYER_2>(layer3_out, std::cout, true);
 
         // [@manuelbv]: Computation of loss
-        std::cout << "Loss" << std::endl;
-        std::cout << loss << std::endl;
+        // std::cout << "Loss" << std::endl;
+        // std::cout << loss << std::endl;
 
       }
       e++;

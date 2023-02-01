@@ -21,6 +21,11 @@
 #include "myproject.h"
 #include "parameters.h"
 
+// -------------------------- AUTOGRAD --------------------------
+// [@manuelbv]: Manually including parameters for autograd
+#include "losses/losses_parameters.h"
+// --------------------------------------------------------------
+
 void myproject(
     input_t fc1_input[N_INPUT_1_1],
     result_t layer3_out[N_LAYER_2],
@@ -64,13 +69,13 @@ void myproject(
     //[@manuelbv]: Instantiate the loss and grads
     result_t grads_layer3_out[N_LAYER_2];
     if(layer3_ground_truth != nullptr) {
-        std::cout <<  "Ground truth passed to nnet seems valid, computing loss" << std::endl ;
+        //std::cout <<  "Ground truth passed to nnet seems valid, computing loss" << std::endl ;
         losses::mse<result_t, mse_config>(layer3_out,layer3_ground_truth,loss,grads_layer3_out);
     } else {
-        std::cout <<  "Ground truth passed to nnet is nullptr, invalid loss" << std::endl ;
+        //std::cout <<  "Ground truth passed to nnet is nullptr, invalid loss" << std::endl ;
         losses::mse<result_t, mse_config>(layer3_out,layer3_out,loss,grads_layer3_out);
     }
-    std::cout << "Loss: " << loss << std::endl;
+    //std::cout << "Loss: " << loss << std::endl;
 
     // [@manuelbv]: Backpass
     // see: https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/

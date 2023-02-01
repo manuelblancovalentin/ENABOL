@@ -22,5 +22,9 @@ obj/myproject_test.o: ../../../../myproject_test.cpp \
  /fpga/cad/xilinx/Vivado/2019.2/include/hls_stream.h \
  ../../../../firmware/defines.h \
  ../../../../firmware/nnet_utils/nnet_types.h \
+ ../../../../firmware/autograd/autograd_defines.h \
  ../../../../firmware/losses/mse.h \
- ../../../../firmware/nnet_utils/nnet_helpers.h
+ ../../../../firmware/autograd/nnet_activation_backprop.h \
+ ../../../../firmware/autograd/nnet_dense_backprop.h \
+ ../../../../firmware/nnet_utils/nnet_helpers.h \
+ ../../../../firmware/autograd/trainer_helpers.h

@@ -26,9 +26,18 @@
 
 #include "defines.h"
 
+// -------------------------- AUTOGRAD --------------------------
+// [@manuelbv]: Manually including definitions for autograd
+#include "autograd/autograd_defines.h"
 
 // [@manuelbv]: Manually importing losses
 #include "losses/mse.h"
+
+// [@manuelbv]: Import backprop implementations
+#include "autograd/nnet_activation_backprop.h"
+#include "autograd/nnet_dense_backprop.h"
+// --------------------------------------------------------------
+
 
 // Prototype of top level function for C-synthesis
 void myproject(
