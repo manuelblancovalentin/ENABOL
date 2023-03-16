@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Mar  9 21:37:49 2023
+# Process ID: 80113
+# Current directory: /mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_linear_2w/hls4ml_prj/myproject_prj/solution1/sim/verilog
+# Command line: wbtcv -mode batch -source /mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_linear_2w/hls4ml_prj/myproject_prj/solution1/sim/verilog/xsim.dir/myproject/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_linear_2w/hls4ml_prj/myproject_prj/solution1/sim/verilog/webtalk.log
+# Journal file: /mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_linear_2w/hls4ml_prj/myproject_prj/solution1/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_linear_2w/hls4ml_prj/myproject_prj/solution1/sim/verilog/xsim.dir/myproject/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_linear_2w/hls4ml_prj/myproject_prj/solution1/sim/verilog/xsim.dir/myproject/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Mar  9 21:37:50 2023. For additional details about this file, please refer to the WebTalk help file at /fpga/cad/xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar  9 21:37:50 2023...

@@ -63,7 +63,6 @@ void myproject(
     layer2_t layer2_out[N_LAYER_2];
     #pragma HLS ARRAY_PARTITION variable=layer2_out complete dim=0
     nnet::dense<input_t, layer2_t, config2>(fc1_input, layer2_out, w2, b2); // fc1
-
     nnet::linear<layer2_t, result_t, linear_config3>(layer2_out, layer3_out); // fc1_linear
 
     //[@manuelbv]: Instantiate the loss and grads

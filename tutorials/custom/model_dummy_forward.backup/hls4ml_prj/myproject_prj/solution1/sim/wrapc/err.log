@@ -1,0 +1,896 @@
+In file included from /fpga/cad/xilinx/Vivado/2019.2/include/floating_point_v7_0_bitacc_cmodel.h:148:0,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/hls_fpo.h:186,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/hls_half.h:44,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/etc/ap_private.h:90,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/ap_common.h:641,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/ap_int.h:54,
+                 from /mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_forward/hls4ml_prj/firmware/myproject.h:23,
+                 from /mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_forward/hls4ml_prj/firmware/myproject.cpp:21:
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:181:9: error: ‘__gmp_const’ does not name a type
+ typedef __gmp_const __mpfr_struct *mpfr_srcptr;
+         ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:181:48: error: expected constructor, destructor, or type conversion before ‘;’ token
+ typedef __gmp_const __mpfr_struct *mpfr_srcptr;
+                                                ^
+In file included from /fpga/cad/xilinx/Vivado/2019.2/include/floating_point_v7_0_bitacc_cmodel.h:148:0,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/hls_fpo.h:186,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/hls_half.h:44,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/etc/ap_private.h:90,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/ap_common.h:641,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/ap_int.h:54,
+                 from /mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_forward/hls4ml_prj/firmware/myproject.h:23,
+                 from /mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_forward/hls4ml_prj/firmware/myproject.cpp:21:
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:244:2: error: ‘__gmp_const’ does not name a type
+ __MPFR_DECLSPEC __gmp_const char * mpfr_get_version _MPFR_PROTO ((void));
+  ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:245:2: error: ‘__gmp_const’ does not name a type
+ __MPFR_DECLSPEC __gmp_const char * mpfr_get_patches _MPFR_PROTO ((void));
+  ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:260:2: error: ‘__gmp_const’ does not name a type
+ __MPFR_DECLSPEC __gmp_const char *
+  ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:299:19: error: ‘mpfr_srcptr’ was not declared in this scope
+   mpfr_can_round _MPFR_PROTO ((mpfr_srcptr, mpfr_exp_t, mpfr_rnd_t, mpfr_rnd_t,
+                   ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:299:42: error: expected primary-expression before ‘,’ token
+   mpfr_can_round _MPFR_PROTO ((mpfr_srcptr, mpfr_exp_t, mpfr_rnd_t, mpfr_rnd_t,
+                                          ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:299:54: error: expected primary-expression before ‘,’ token
+   mpfr_can_round _MPFR_PROTO ((mpfr_srcptr, mpfr_exp_t, mpfr_rnd_t, mpfr_rnd_t,
+                                                      ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:299:66: error: expected primary-expression before ‘,’ token
+   mpfr_can_round _MPFR_PROTO ((mpfr_srcptr, mpfr_exp_t, mpfr_rnd_t, mpfr_rnd_t,
+                                                                  ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:299:79: error: expected primary-expression before ‘)’ token
+   mpfr_can_round _MPFR_PROTO ((mpfr_srcptr, mpfr_exp_t, mpfr_rnd_t, mpfr_rnd_t,
+                                                                               ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:299:79: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:329:24: error: ‘mpfr_srcptr’ has not been declared
+   mpfr_get_f _MPFR_PROTO ((mpf_ptr, mpfr_srcptr, mpfr_rnd_t));
+                        ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:340:27: error: ‘__gmp_const’ has not been declared
+   mpfr_set_str _MPFR_PROTO ((mpfr_ptr, __gmp_const char *, int, mpfr_rnd_t));
+                           ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:340:44: error: two or more data types in declaration of ‘parameter’
+   mpfr_set_str _MPFR_PROTO ((mpfr_ptr, __gmp_const char *, int, mpfr_rnd_t));
+                                            ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:340:45: error: expected ‘)’ before ‘,’ token
+   mpfr_set_str _MPFR_PROTO ((mpfr_ptr, __gmp_const char *, int, mpfr_rnd_t));
+                                             ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:340:47: error: expected unqualified-id before ‘int’
+   mpfr_set_str _MPFR_PROTO ((mpfr_ptr, __gmp_const char *, int, mpfr_rnd_t));
+                                               ^~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:342:32: error: ‘__gmp_const’ has not been declared
+   mpfr_init_set_str _MPFR_PROTO ((mpfr_ptr, __gmp_const char *, int,
+                                ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:342:49: error: two or more data types in declaration of ‘parameter’
+   mpfr_init_set_str _MPFR_PROTO ((mpfr_ptr, __gmp_const char *, int,
+                                                 ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:342:50: error: expected ‘)’ before ‘,’ token
+   mpfr_init_set_str _MPFR_PROTO ((mpfr_ptr, __gmp_const char *, int,
+                                                  ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:342:52: error: expected unqualified-id before ‘int’
+   mpfr_init_set_str _MPFR_PROTO ((mpfr_ptr, __gmp_const char *, int,
+                                                    ^~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:345:24: error: ‘mpfr_srcptr’ has not been declared
+   mpfr_set4 _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_rnd_t, int));
+                        ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:347:23: error: ‘mpfr_srcptr’ has not been declared
+   mpfr_abs _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_rnd_t));
+                       ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:349:23: error: ‘mpfr_srcptr’ has not been declared
+   mpfr_set _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_rnd_t));
+                       ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:350:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_neg _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:353:27: error: ‘mpfr_srcptr’ has not been declared
+   mpfr_setsign _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, int, mpfr_rnd_t));
+                           ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:355:28: error: ‘mpfr_srcptr’ has not been declared
+   mpfr_copysign _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_srcptr, mpfr_rnd_t));
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:355:41: error: ‘mpfr_srcptr’ has not been declared
+   mpfr_copysign _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_srcptr, mpfr_rnd_t));
+                                         ^~~~~~~~~~~
+In file included from /fpga/cad/xilinx/Vivado/2019.2/include/floating_point_v7_0_bitacc_cmodel.h:148:0,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/hls_fpo.h:186,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/hls_half.h:44,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/etc/ap_private.h:90,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/ap_common.h:641,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/ap_int.h:54,
+                 from /mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_forward/hls4ml_prj/firmware/myproject.h:23,
+                 from /mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_forward/hls4ml_prj/firmware/myproject.cpp:21:
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:370:32: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC intmax_t mpfr_get_sj _MPFR_PROTO ((mpfr_srcptr, mpfr_rnd_t));
+                                ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:370:55: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC intmax_t mpfr_get_sj _MPFR_PROTO ((mpfr_srcptr, mpfr_rnd_t));
+                                                       ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:370:55: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:371:33: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC uintmax_t mpfr_get_uj _MPFR_PROTO ((mpfr_srcptr, mpfr_rnd_t));
+                                 ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:371:56: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC uintmax_t mpfr_get_uj _MPFR_PROTO ((mpfr_srcptr, mpfr_rnd_t));
+                                                        ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:371:56: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:375:22: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC float mpfr_get_flt _MPFR_PROTO ((mpfr_srcptr, mpfr_rnd_t));
+                      ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:375:45: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC float mpfr_get_flt _MPFR_PROTO ((mpfr_srcptr, mpfr_rnd_t));
+                                             ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:375:45: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:376:21: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC double mpfr_get_d _MPFR_PROTO ((mpfr_srcptr, mpfr_rnd_t));
+                     ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:376:44: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC double mpfr_get_d _MPFR_PROTO ((mpfr_srcptr, mpfr_rnd_t));
+                                            ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:376:44: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:381:27: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC long double mpfr_get_ld _MPFR_PROTO ((mpfr_srcptr,
+                           ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:381:50: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC long double mpfr_get_ld _MPFR_PROTO ((mpfr_srcptr,
+                                                  ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:381:50: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:384:33: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC double mpfr_get_d_2exp _MPFR_PROTO ((long*, mpfr_srcptr,
+                                 ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:386:39: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC long double mpfr_get_ld_2exp _MPFR_PROTO ((long*, mpfr_srcptr,
+                                       ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:388:20: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC long mpfr_get_si _MPFR_PROTO ((mpfr_srcptr, mpfr_rnd_t));
+                    ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:388:43: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC long mpfr_get_si _MPFR_PROTO ((mpfr_srcptr, mpfr_rnd_t));
+                                           ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:388:43: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:389:29: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC unsigned long mpfr_get_ui _MPFR_PROTO ((mpfr_srcptr,
+                             ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:389:52: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC unsigned long mpfr_get_ui _MPFR_PROTO ((mpfr_srcptr,
+                                                    ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:389:52: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:391:54: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC char*mpfr_get_str _MPFR_PROTO ((char*, mpfr_exp_t*, int, size_t,
+                                                      ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:411:46: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC size_t mpfr_out_str _MPFR_PROTO ((FILE*, int, size_t,
+                                              ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:414:30: error: ‘__gmp_const’ has not been declared
+ __MPFR_DECLSPEC int mpfr_fprintf _MPFR_PROTO ((FILE*, __gmp_const char*,
+                              ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:414:46: error: two or more data types in declaration of ‘parameter’
+ __MPFR_DECLSPEC int mpfr_fprintf _MPFR_PROTO ((FILE*, __gmp_const char*,
+                                              ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:414:47: error: expected ‘)’ before ‘,’ token
+ __MPFR_DECLSPEC int mpfr_fprintf _MPFR_PROTO ((FILE*, __gmp_const char*,
+                                               ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:414:49: error: expected unqualified-id before ‘...’ token
+ __MPFR_DECLSPEC int mpfr_fprintf _MPFR_PROTO ((FILE*, __gmp_const char*,
+                                                 ^~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:417:19: error: ‘__gmp_const’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_printf _MPFR_PROTO ((__gmp_const char*, ...));
+                   ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:417:38: error: expected primary-expression before ‘...’ token
+ __MPFR_DECLSPEC int mpfr_printf _MPFR_PROTO ((__gmp_const char*, ...));
+                                      ^~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:417:41: error: expression list treated as compound expression in initializer [-fpermissive]
+ __MPFR_DECLSPEC int mpfr_printf _MPFR_PROTO ((__gmp_const char*, ...));
+                                         ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:418:29: error: ‘__gmp_const’ has not been declared
+ __MPFR_DECLSPEC int mpfr_asprintf _MPFR_PROTO ((char**, __gmp_const char*,
+                             ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:418:45: error: two or more data types in declaration of ‘parameter’
+ __MPFR_DECLSPEC int mpfr_asprintf _MPFR_PROTO ((char**, __gmp_const char*,
+                                             ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:418:46: error: expected ‘)’ before ‘,’ token
+ __MPFR_DECLSPEC int mpfr_asprintf _MPFR_PROTO ((char**, __gmp_const char*,
+                                              ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:418:48: error: expected unqualified-id before ‘...’ token
+ __MPFR_DECLSPEC int mpfr_asprintf _MPFR_PROTO ((char**, __gmp_const char*,
+                                                ^~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:420:27: error: ‘__gmp_const’ has not been declared
+ __MPFR_DECLSPEC int mpfr_sprintf _MPFR_PROTO ((char*, __gmp_const char*,
+                           ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:420:43: error: two or more data types in declaration of ‘parameter’
+ __MPFR_DECLSPEC int mpfr_sprintf _MPFR_PROTO ((char*, __gmp_const char*,
+                                           ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:420:44: error: expected ‘)’ before ‘,’ token
+ __MPFR_DECLSPEC int mpfr_sprintf _MPFR_PROTO ((char*, __gmp_const char*,
+                                            ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:420:46: error: expected unqualified-id before ‘...’ token
+ __MPFR_DECLSPEC int mpfr_sprintf _MPFR_PROTO ((char*, __gmp_const char*,
+                                              ^~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:422:36: error: ‘__gmp_const’ has not been declared
+ __MPFR_DECLSPEC int mpfr_snprintf _MPFR_PROTO ((char*, size_t,
+                                    ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:422:52: error: two or more data types in declaration of ‘parameter’
+ __MPFR_DECLSPEC int mpfr_snprintf _MPFR_PROTO ((char*, size_t,
+                                                    ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:422:53: error: expected ‘)’ before ‘,’ token
+ __MPFR_DECLSPEC int mpfr_snprintf _MPFR_PROTO ((char*, size_t,
+                                                     ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:422:55: error: expected unqualified-id before ‘...’ token
+ __MPFR_DECLSPEC int mpfr_snprintf _MPFR_PROTO ((char*, size_t,
+                                                       ^~~
+In file included from /fpga/cad/xilinx/Vivado/2019.2/include/floating_point_v7_0_bitacc_cmodel.h:148:0,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/hls_fpo.h:186,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/hls_half.h:44,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/etc/ap_private.h:90,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/ap_common.h:641,
+                 from /fpga/cad/xilinx/Vivado/2019.2/include/ap_int.h:54,
+                 from /mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_forward/hls4ml_prj/firmware/myproject.h:23,
+                 from /mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_forward/hls4ml_prj/firmware/myproject.cpp:21:
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:444:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_pow _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:444:39: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_pow _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                                       ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:446:29: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_pow_si _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                             ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:448:29: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_pow_ui _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                             ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:452:48: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_ui_pow _MPFR_PROTO ((mpfr_ptr, unsigned long int,
+                                                ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:454:28: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_pow_z _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:457:27: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_sqrt _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                           ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:461:31: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_rec_sqrt _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                               ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:464:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_add _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:464:39: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_add _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                                       ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:466:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_sub _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:466:39: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_sub _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                                       ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:468:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_mul _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:468:39: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_mul _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                                       ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:470:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_div _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:470:39: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_div _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                                       ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:473:29: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_add_ui _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                             ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:475:29: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_sub_ui _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                             ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:477:44: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_ui_sub _MPFR_PROTO ((mpfr_ptr, unsigned long,
+                                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:479:29: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_mul_ui _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                             ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:481:29: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_div_ui _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                             ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:483:44: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_ui_div _MPFR_PROTO ((mpfr_ptr, unsigned long,
+                                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:486:29: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_add_si _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                             ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:488:29: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_sub_si _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                             ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:490:39: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_si_sub _MPFR_PROTO ((mpfr_ptr, long int,
+                                       ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:492:29: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_mul_si _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                             ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:494:29: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_div_si _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                             ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:496:39: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_si_div _MPFR_PROTO ((mpfr_ptr, long int,
+                                       ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:499:28: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_add_d _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:501:28: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_sub_d _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:503:36: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_d_sub _MPFR_PROTO ((mpfr_ptr, double,
+                                    ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:505:28: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_mul_d _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:507:28: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_div_d _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:509:36: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_d_div _MPFR_PROTO ((mpfr_ptr, double,
+                                    ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:512:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_sqr _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:519:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_agm _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_srcptr,
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:519:39: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_agm _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_srcptr,
+                                       ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:522:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_log _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:523:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_log2 _MPFR_PROTO ((mpfr_ptr,mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:524:28: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_log10 _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:526:28: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_log1p _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:529:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_exp _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:530:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_exp2 _MPFR_PROTO ((mpfr_ptr,mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:531:28: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_exp10 _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:533:28: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_expm1 _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:535:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_eint _MPFR_PROTO ((mpfr_ptr,mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:536:25: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_li2 _MPFR_PROTO ((mpfr_ptr,mpfr_srcptr,mpfr_rnd_t));
+                         ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:538:16: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_cmp  _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:538:39: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC int mpfr_cmp  _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                                       ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:538:39: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:539:17: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_cmp3 _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr, int));
+                 ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:539:30: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_cmp3 _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr, int));
+                              ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:539:43: error: expected primary-expression before ‘int’
+ __MPFR_DECLSPEC int mpfr_cmp3 _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr, int));
+                                           ^~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:539:46: error: expression list treated as compound expression in initializer [-fpermissive]
+ __MPFR_DECLSPEC int mpfr_cmp3 _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr, int));
+                                              ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:540:18: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_cmp_d _MPFR_PROTO ((mpfr_srcptr, double));
+                  ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:540:31: error: expected primary-expression before ‘double’
+ __MPFR_DECLSPEC int mpfr_cmp_d _MPFR_PROTO ((mpfr_srcptr, double));
+                               ^~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:540:37: error: expression list treated as compound expression in initializer [-fpermissive]
+ __MPFR_DECLSPEC int mpfr_cmp_d _MPFR_PROTO ((mpfr_srcptr, double));
+                                     ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:541:19: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_cmp_ld _MPFR_PROTO ((mpfr_srcptr, long double));
+                   ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:541:32: error: expected primary-expression before ‘long’
+ __MPFR_DECLSPEC int mpfr_cmp_ld _MPFR_PROTO ((mpfr_srcptr, long double));
+                                ^~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:541:43: error: expression list treated as compound expression in initializer [-fpermissive]
+ __MPFR_DECLSPEC int mpfr_cmp_ld _MPFR_PROTO ((mpfr_srcptr, long double));
+                                           ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:542:19: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_cmpabs _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                   ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:542:42: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC int mpfr_cmpabs _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                                          ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:542:42: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:543:19: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_cmp_ui _MPFR_PROTO ((mpfr_srcptr, unsigned long));
+                   ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:543:32: error: expected primary-expression before ‘unsigned’
+ __MPFR_DECLSPEC int mpfr_cmp_ui _MPFR_PROTO ((mpfr_srcptr, unsigned long));
+                                ^~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:543:45: error: expression list treated as compound expression in initializer [-fpermissive]
+ __MPFR_DECLSPEC int mpfr_cmp_ui _MPFR_PROTO ((mpfr_srcptr, unsigned long));
+                                             ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:544:19: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_cmp_si _MPFR_PROTO ((mpfr_srcptr, long));
+                   ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:544:32: error: expected primary-expression before ‘long’
+ __MPFR_DECLSPEC int mpfr_cmp_si _MPFR_PROTO ((mpfr_srcptr, long));
+                                ^~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:544:36: error: expression list treated as compound expression in initializer [-fpermissive]
+ __MPFR_DECLSPEC int mpfr_cmp_si _MPFR_PROTO ((mpfr_srcptr, long));
+                                    ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:545:24: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_cmp_ui_2exp _MPFR_PROTO ((mpfr_srcptr, unsigned long,
+                        ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:545:37: error: expected primary-expression before ‘unsigned’
+ __MPFR_DECLSPEC int mpfr_cmp_ui_2exp _MPFR_PROTO ((mpfr_srcptr, unsigned long,
+                                     ^~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:545:62: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC int mpfr_cmp_ui_2exp _MPFR_PROTO ((mpfr_srcptr, unsigned long,
+                                                              ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:545:62: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:547:24: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_cmp_si_2exp _MPFR_PROTO ((mpfr_srcptr, long,
+                        ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:547:37: error: expected primary-expression before ‘long’
+ __MPFR_DECLSPEC int mpfr_cmp_si_2exp _MPFR_PROTO ((mpfr_srcptr, long,
+                                     ^~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:547:53: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC int mpfr_cmp_si_2exp _MPFR_PROTO ((mpfr_srcptr, long,
+                                                     ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:547:53: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:549:31: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC void mpfr_reldiff _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                               ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:549:44: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC void mpfr_reldiff _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:551:15: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_eq _MPFR_PROTO((mpfr_srcptr, mpfr_srcptr,
+               ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:551:28: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_eq _MPFR_PROTO((mpfr_srcptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:551:41: error: expected primary-expression before ‘unsigned’
+ __MPFR_DECLSPEC int mpfr_eq _MPFR_PROTO((mpfr_srcptr, mpfr_srcptr,
+                                         ^~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:551:54: error: expression list treated as compound expression in initializer [-fpermissive]
+ __MPFR_DECLSPEC int mpfr_eq _MPFR_PROTO((mpfr_srcptr, mpfr_srcptr,
+                                                      ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:555:31: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_mul_2exp _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                               ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:557:31: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_div_2exp _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                               ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:559:30: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_mul_2ui _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                              ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:561:30: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_div_2ui _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                              ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:563:30: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_mul_2si _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                              ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:565:30: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_div_2si _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                              ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:568:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_rint _MPFR_PROTO((mpfr_ptr,mpfr_srcptr, mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:573:33: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_rint_round _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                                 ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:575:33: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_rint_trunc _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                                 ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:577:32: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_rint_ceil _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                                ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:579:33: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_rint_floor _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                                 ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:581:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_frac _MPFR_PROTO ((mpfr_ptr,mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:582:37: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_modf _MPFR_PROTO ((mpfr_ptr, mpfr_ptr, mpfr_srcptr,
+                                     ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:584:36: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_remquo _MPFR_PROTO ((mpfr_ptr, long*, mpfr_srcptr,
+                                    ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:584:49: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_remquo _MPFR_PROTO ((mpfr_ptr, long*, mpfr_srcptr,
+                                                 ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:586:32: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_remainder _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                                ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:586:45: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_remainder _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                                             ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:588:27: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_fmod _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                           ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:588:40: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_fmod _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                                        ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:591:25: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_fits_ulong_p _MPFR_PROTO((mpfr_srcptr, mpfr_rnd_t));
+                         ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:591:48: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC int mpfr_fits_ulong_p _MPFR_PROTO((mpfr_srcptr, mpfr_rnd_t));
+                                                ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:591:48: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:592:25: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_fits_slong_p _MPFR_PROTO((mpfr_srcptr, mpfr_rnd_t));
+                         ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:592:48: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC int mpfr_fits_slong_p _MPFR_PROTO((mpfr_srcptr, mpfr_rnd_t));
+                                                ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:592:48: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:593:24: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_fits_uint_p _MPFR_PROTO((mpfr_srcptr, mpfr_rnd_t));
+                        ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:593:47: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC int mpfr_fits_uint_p _MPFR_PROTO((mpfr_srcptr, mpfr_rnd_t));
+                                               ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:593:47: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:594:24: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_fits_sint_p _MPFR_PROTO((mpfr_srcptr, mpfr_rnd_t));
+                        ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:594:47: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC int mpfr_fits_sint_p _MPFR_PROTO((mpfr_srcptr, mpfr_rnd_t));
+                                               ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:594:47: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:595:26: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_fits_ushort_p _MPFR_PROTO((mpfr_srcptr, mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:595:49: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC int mpfr_fits_ushort_p _MPFR_PROTO((mpfr_srcptr, mpfr_rnd_t));
+                                                 ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:595:49: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:596:26: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_fits_sshort_p _MPFR_PROTO((mpfr_srcptr, mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:596:49: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC int mpfr_fits_sshort_p _MPFR_PROTO((mpfr_srcptr, mpfr_rnd_t));
+                                                 ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:596:49: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:597:27: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_fits_uintmax_p _MPFR_PROTO((mpfr_srcptr,mpfr_rnd_t));
+                           ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:597:49: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC int mpfr_fits_uintmax_p _MPFR_PROTO((mpfr_srcptr,mpfr_rnd_t));
+                                                 ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:597:49: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:598:26: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_fits_intmax_p _MPFR_PROTO((mpfr_srcptr, mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:598:49: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC int mpfr_fits_intmax_p _MPFR_PROTO((mpfr_srcptr, mpfr_rnd_t));
+                                                 ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:598:49: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:600:30: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC void mpfr_extract _MPFR_PROTO ((mpz_ptr, mpfr_srcptr,
+                              ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:603:29: error: variable or field ‘mpfr_dump’ declared void
+ __MPFR_DECLSPEC void mpfr_dump _MPFR_PROTO ((mpfr_srcptr));
+                             ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:603:18: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC void mpfr_dump _MPFR_PROTO ((mpfr_srcptr));
+                  ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:605:18: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_nan_p _MPFR_PROTO((mpfr_srcptr));
+                  ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:606:18: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_inf_p _MPFR_PROTO((mpfr_srcptr));
+                  ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:607:21: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_number_p _MPFR_PROTO((mpfr_srcptr));
+                     ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:608:22: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_integer_p _MPFR_PROTO ((mpfr_srcptr));
+                      ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:609:19: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_zero_p _MPFR_PROTO ((mpfr_srcptr));
+                   ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:610:22: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_regular_p _MPFR_PROTO ((mpfr_srcptr));
+                      ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:612:22: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_greater_p _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                      ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:612:35: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_greater_p _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                                   ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:612:46: error: expression list treated as compound expression in initializer [-fpermissive]
+ __MPFR_DECLSPEC int mpfr_greater_p _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                                              ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:613:27: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_greaterequal_p _MPFR_PROTO ((mpfr_srcptr,
+                           ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:613:40: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_greaterequal_p _MPFR_PROTO ((mpfr_srcptr,
+                                        ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:613:51: error: expression list treated as compound expression in initializer [-fpermissive]
+ __MPFR_DECLSPEC int mpfr_greaterequal_p _MPFR_PROTO ((mpfr_srcptr,
+                                                   ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:615:19: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_less_p _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                   ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:615:32: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_less_p _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                                ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:615:43: error: expression list treated as compound expression in initializer [-fpermissive]
+ __MPFR_DECLSPEC int mpfr_less_p _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                                           ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:616:24: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_lessequal_p _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                        ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:616:37: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_lessequal_p _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                                     ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:616:48: error: expression list treated as compound expression in initializer [-fpermissive]
+ __MPFR_DECLSPEC int mpfr_lessequal_p _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                                                ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:617:26: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_lessgreater_p _MPFR_PROTO((mpfr_srcptr,mpfr_srcptr));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:617:38: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_lessgreater_p _MPFR_PROTO((mpfr_srcptr,mpfr_srcptr));
+                                      ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:617:49: error: expression list treated as compound expression in initializer [-fpermissive]
+ __MPFR_DECLSPEC int mpfr_lessgreater_p _MPFR_PROTO((mpfr_srcptr,mpfr_srcptr));
+                                                 ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:618:20: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_equal_p _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                    ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:618:33: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_equal_p _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                                 ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:618:44: error: expression list treated as compound expression in initializer [-fpermissive]
+ __MPFR_DECLSPEC int mpfr_equal_p _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                                            ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:619:24: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_unordered_p _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                        ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:619:37: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_unordered_p _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                                     ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:619:48: error: expression list treated as compound expression in initializer [-fpermissive]
+ __MPFR_DECLSPEC int mpfr_unordered_p _MPFR_PROTO ((mpfr_srcptr, mpfr_srcptr));
+                                                ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:621:27: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_atanh _MPFR_PROTO((mpfr_ptr,mpfr_srcptr,mpfr_rnd_t));
+                           ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:622:27: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_acosh _MPFR_PROTO((mpfr_ptr,mpfr_srcptr,mpfr_rnd_t));
+                           ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:623:27: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_asinh _MPFR_PROTO((mpfr_ptr,mpfr_srcptr,mpfr_rnd_t));
+                           ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:624:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_cosh _MPFR_PROTO((mpfr_ptr,mpfr_srcptr, mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:625:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_sinh _MPFR_PROTO((mpfr_ptr,mpfr_srcptr, mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:626:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_tanh _MPFR_PROTO((mpfr_ptr,mpfr_srcptr, mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:627:42: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_sinh_cosh _MPFR_PROTO ((mpfr_ptr, mpfr_ptr,
+                                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:630:27: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_sech _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,mpfr_rnd_t));
+                           ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:631:27: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_csch _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,mpfr_rnd_t));
+                           ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:632:27: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_coth _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,mpfr_rnd_t));
+                           ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:634:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_acos _MPFR_PROTO ((mpfr_ptr,mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:635:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_asin _MPFR_PROTO ((mpfr_ptr,mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:636:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_atan _MPFR_PROTO ((mpfr_ptr,mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:637:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_sin _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:638:40: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_sin_cos _MPFR_PROTO ((mpfr_ptr, mpfr_ptr,
+                                        ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:640:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_cos _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:641:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_tan _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:642:27: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_atan2 _MPFR_PROTO ((mpfr_ptr,mpfr_srcptr,mpfr_srcptr,
+                           ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:642:39: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_atan2 _MPFR_PROTO ((mpfr_ptr,mpfr_srcptr,mpfr_srcptr,
+                                       ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:644:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_sec _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:645:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_csc _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:646:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_cot _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:648:28: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_hypot _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:648:41: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_hypot _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                                         ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:650:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_erf _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:651:27: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_erfc _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,mpfr_rnd_t));
+                           ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:652:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_cbrt _MPFR_PROTO ((mpfr_ptr,mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:653:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_root _MPFR_PROTO ((mpfr_ptr,mpfr_srcptr,unsigned long,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:654:27: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_gamma _MPFR_PROTO((mpfr_ptr,mpfr_srcptr,mpfr_rnd_t));
+                           ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:655:29: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_lngamma _MPFR_PROTO((mpfr_ptr,mpfr_srcptr,mpfr_rnd_t));
+                             ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:656:33: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_lgamma _MPFR_PROTO((mpfr_ptr,int*,mpfr_srcptr,mpfr_rnd_t));
+                                 ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:657:29: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_digamma _MPFR_PROTO((mpfr_ptr,mpfr_srcptr,mpfr_rnd_t));
+                             ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:658:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_zeta _MPFR_PROTO ((mpfr_ptr,mpfr_srcptr,mpfr_rnd_t));
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:662:25: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_j0 _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_rnd_t));
+                         ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:663:25: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_j1 _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_rnd_t));
+                         ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:664:31: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_jn _MPFR_PROTO ((mpfr_ptr, long, mpfr_srcptr,
+                               ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:666:25: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_y0 _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_rnd_t));
+                         ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:667:25: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_y1 _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_rnd_t));
+                         ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:668:31: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_yn _MPFR_PROTO ((mpfr_ptr, long, mpfr_srcptr,
+                               ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:671:25: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_ai _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_rnd_t));
+                         ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:673:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_min _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_srcptr,
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:673:39: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_min _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_srcptr,
+                                       ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:675:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_max _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_srcptr,
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:675:39: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_max _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_srcptr,
+                                       ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:677:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_dim _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_srcptr,
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:677:39: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_dim _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_srcptr,
+                                       ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:680:28: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_mul_z _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:682:28: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_div_z _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:684:28: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_add_z _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:686:28: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_sub_z _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:688:18: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_cmp_z _MPFR_PROTO ((mpfr_srcptr, mpz_srcptr));
+                  ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:688:41: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC int mpfr_cmp_z _MPFR_PROTO ((mpfr_srcptr, mpz_srcptr));
+                                         ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:688:41: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:690:28: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_mul_q _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:692:28: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_div_q _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:694:28: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_add_q _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:696:28: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_sub_q _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr,
+                            ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:698:18: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_cmp_q _MPFR_PROTO ((mpfr_srcptr, mpq_srcptr));
+                  ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:698:41: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC int mpfr_cmp_q _MPFR_PROTO ((mpfr_srcptr, mpq_srcptr));
+                                         ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:698:41: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:700:18: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int mpfr_cmp_f _MPFR_PROTO ((mpfr_srcptr, mpf_srcptr));
+                  ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:700:41: error: expected primary-expression before ‘)’ token
+ __MPFR_DECLSPEC int mpfr_cmp_f _MPFR_PROTO ((mpfr_srcptr, mpf_srcptr));
+                                         ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:700:41: error: expression list treated as compound expression in initializer [-fpermissive]
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:702:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_fma _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_srcptr,
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:702:39: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_fma _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_srcptr,
+                                       ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:702:52: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_fma _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_srcptr,
+                                                    ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:704:26: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_fms _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_srcptr,
+                          ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:704:39: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_fms _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_srcptr,
+                                       ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:704:52: error: ‘mpfr_srcptr’ has not been declared
+ __MPFR_DECLSPEC int mpfr_fms _MPFR_PROTO ((mpfr_ptr, mpfr_srcptr, mpfr_srcptr,
+                                                    ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:714:30: error: ‘__gmp_const’ has not been declared
+ __MPFR_DECLSPEC int  mpfr_strtofr _MPFR_PROTO ((mpfr_ptr, __gmp_const char *,
+                              ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:714:47: error: two or more data types in declaration of ‘parameter’
+ __MPFR_DECLSPEC int  mpfr_strtofr _MPFR_PROTO ((mpfr_ptr, __gmp_const char *,
+                                               ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:714:48: error: expected ‘)’ before ‘,’ token
+ __MPFR_DECLSPEC int  mpfr_strtofr _MPFR_PROTO ((mpfr_ptr, __gmp_const char *,
+                                                ^
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:714:50: error: expected unqualified-id before ‘char’
+ __MPFR_DECLSPEC int  mpfr_strtofr _MPFR_PROTO ((mpfr_ptr, __gmp_const char *,
+                                                  ^~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:719:38: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC void * mpfr_custom_get_significand _MPFR_PROTO ((mpfr_srcptr));
+                                      ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:720:34: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC mpfr_exp_t mpfr_custom_get_exp  _MPFR_PROTO ((mpfr_srcptr));
+                                  ^~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/include/mpfr.h:724:28: error: ‘mpfr_srcptr’ was not declared in this scope
+ __MPFR_DECLSPEC int    mpfr_custom_get_kind   _MPFR_PROTO ((mpfr_srcptr));
+                            ^~~~~~~~~~~
+make: *** [obj/myproject.cpp_pre.cpp.tb.o] Error 1

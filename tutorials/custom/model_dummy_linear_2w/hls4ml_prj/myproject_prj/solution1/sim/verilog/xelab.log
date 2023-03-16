@@ -1,0 +1,57 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/fpga/cad/xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /fpga/cad/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_myproject_top glbl -prj myproject.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /fpga/cad/xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s myproject -debug wave 
+Multi-threading is on. Using 78 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_linear_2w/hls4ml_prj/myproject_prj/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_linear_2w/hls4ml_prj/myproject_prj/solution1/sim/verilog/myproject_w4_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_w4_V_ram
+INFO: [VRFC 10-311] analyzing module myproject_w4_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_linear_2w/hls4ml_prj/myproject_prj/solution1/sim/verilog/linear_ap_fixed_ap_fixed_16_6_0_0_0_linear_config3_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module linear_ap_fixed_ap_fixed_16_6_0_0_0_linear_config3_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_linear_2w/hls4ml_prj/myproject_prj/solution1/sim/verilog/dense_latency_ap_fixed_ap_fixed_config2_0_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_latency_ap_fixed_ap_fixed_config2_0_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_linear_2w/hls4ml_prj/myproject_prj/solution1/sim/verilog/linear_ap_fixed_ap_fixed_16_6_0_0_0_linear_config5_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module linear_ap_fixed_ap_fixed_16_6_0_0_0_linear_config5_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_linear_2w/hls4ml_prj/myproject_prj/solution1/sim/verilog/myproject_mul_mul_16s_16s_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_mul_16s_16s_26_1_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module myproject_mul_mul_16s_16s_26_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_linear_2w/hls4ml_prj/myproject_prj/solution1/sim/verilog/dense_latency_ap_fixed_ap_fixed_config4_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_latency_ap_fixed_ap_fixed_config4_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_linear_2w/hls4ml_prj/myproject_prj/solution1/sim/verilog/myproject_mul_mul_16s_16s_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_mul_mul_16s_16s_32_1_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module myproject_mul_mul_16s_16s_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_linear_2w/hls4ml_prj/myproject_prj/solution1/sim/verilog/myproject.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_linear_2w/hls4ml_prj/myproject_prj/solution1/sim/verilog/AESL_automem_layer5_out_ground_truth_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_layer5_out_ground_truth_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_linear_2w/hls4ml_prj/myproject_prj/solution1/sim/verilog/myproject_w2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_w2_V_ram
+INFO: [VRFC 10-311] analyzing module myproject_w2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_linear_2w/hls4ml_prj/myproject_prj/solution1/sim/verilog/myproject.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_myproject_top
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.myproject_w2_V_ram
+Compiling module xil_defaultlib.myproject_w2_V(DataWidth=6,Addre...
+Compiling module xil_defaultlib.myproject_w4_V_ram
+Compiling module xil_defaultlib.myproject_w4_V(DataWidth=6,Addre...
+Compiling module xil_defaultlib.dense_latency_ap_fixed_ap_fixed_...
+Compiling module xil_defaultlib.dense_latency_ap_fixed_ap_fixed_...
+Compiling module xil_defaultlib.linear_ap_fixed_ap_fixed_16_6_0_...
+Compiling module xil_defaultlib.linear_ap_fixed_ap_fixed_16_6_0_...
+Compiling module xil_defaultlib.myproject_mul_mul_16s_16s_32_1_1...
+Compiling module xil_defaultlib.myproject_mul_mul_16s_16s_32_1_1...
+Compiling module xil_defaultlib.myproject_mul_mul_16s_16s_26_1_1...
+Compiling module xil_defaultlib.myproject_mul_mul_16s_16s_26_1_1...
+Compiling module xil_defaultlib.myproject
+Compiling module xil_defaultlib.AESL_automem_layer5_out_ground_t...
+Compiling module xil_defaultlib.apatb_myproject_top
+Compiling module work.glbl
+Built simulation snapshot myproject

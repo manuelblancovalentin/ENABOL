@@ -1,0 +1,5 @@
+<annotationInfo>
+<item  id="10" filename="firmware/nnet_utils/nnet_mult.h" linenumber="77" name="trunc_ln" contextFuncName="product" moduleName="dense_latency&lt;ap_fixed,ap_fixed,config2&gt;.0.0" rtlName="ap_return" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/manuelbv/ETHW/tutorials/custom/model_dummy_forward/hls4ml_prj"&gt;&lt;\/item&gt;
+<item  id="17" filename="firmware/myproject.cpp" linenumber="60" name="call_ret6" contextFuncName="myproject" moduleName="myproject" rtlName="call_ret6_linear_ap_fixed_ap_fixed_16_6_0_0_0_linear_config3_s_fu_75" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/manuelbv/ETHW/tutorials/custom/model_dummy_forward/hls4ml_prj"><\/item>
+<item  id="18" filename="firmware/myproject.cpp" linenumber="60" name="sext_ln60" contextFuncName="myproject" moduleName="myproject" rtlName="layer3_out_0_V" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/manuelbv/ETHW/tutorials/custom/model_dummy_forward/hls4ml_prj"><\/item>
+</annotationInfo>

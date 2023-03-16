@@ -60,8 +60,6 @@
                                     <listOptionValue builtIn="false" value="/fpga/cad/xilinx/Vivado/2019.2/include/etc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/auto_cc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_forward/hls4ml_prj"/>
                                     								
                                 </option>
                                 								
@@ -96,8 +94,6 @@
                                     <listOptionValue builtIn="false" value="/fpga/cad/xilinx/Vivado/2019.2/include/etc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/auto_cc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_forward/hls4ml_prj"/>
                                     								
                                 </option>
                                 								
@@ -292,8 +288,6 @@
                                     <listOptionValue builtIn="false" value="/fpga/cad/xilinx/Vivado/2019.2/include/etc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/auto_cc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_forward/hls4ml_prj"/>
                                     								
                                 </option>
                                 								
@@ -318,8 +312,6 @@
                                     <listOptionValue builtIn="false" value="/fpga/cad/xilinx/Vivado/2019.2/include/etc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/auto_cc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/mnt/raid0/asic/projects/NU/ETHW/manuelbv/tutorials/custom/model_dummy_forward/hls4ml_prj"/>
                                     								
                                 </option>
                                 								

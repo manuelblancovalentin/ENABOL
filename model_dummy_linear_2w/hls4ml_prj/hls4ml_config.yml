@@ -1,0 +1,29 @@
+Backend: Vivado
+Board: null
+ClockPeriod: 5
+HLSConfig:
+  LayerName:
+    fc1:
+      Precision:
+        bias: ap_fixed<6,1>
+        weight: ap_fixed<6,1>
+      ReuseFactor: 1
+      Trainable: true
+    fc1_input:
+      Precision:
+        result: ap_fixed<16,6>
+  Model:
+    Losses:
+    - mse
+    Precision: ap_fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    Trainable: true
+IOType: io_parallel
+InputData: null
+KerasModel: !keras_model 'model_dummy_linear_2w/hls4ml_prj/keras_model.h5'
+OutputDir: model_dummy_linear_2w/hls4ml_prj
+OutputPredictions: null
+ProjectName: myproject
+Stamp: B3bd1ad8
+XilinxPart: xcu250-figd2104-2L-e
