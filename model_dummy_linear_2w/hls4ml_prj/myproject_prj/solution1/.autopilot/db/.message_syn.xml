@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;firmware/myproject.cpp&apos; ..."/>
+	<Message severity="ERROR" prefix="[HLS 200-70]" key="HLS_70_1454" tag="" content="Compilation errors found: In file included from firmware/myproject.cpp:1:
+In file included from firmware/myproject.cpp:21:
+In file included from firmware/myproject.h:38:
+firmware/autograd/nnet_dense_backprop.h:50:52: error: use of overloaded operator &apos;&lt;&lt;&apos; is ambiguous (with operand types &apos;basic_ostream&lt;char, std::char_traits&lt;char&gt; &gt;&apos; and &apos;ap_fixed&lt;16, 6, 5, 3, 0&gt;&apos;)
+            std::cout &lt;&lt; &quot;grads_in[&quot; &lt;&lt; jj &lt;&lt; &quot;]=&quot; &lt;&lt; grads_in[jj] &lt;&lt; std::endl;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~
+firmware/myproject.cpp:91:5: note: in instantiation of function template specialization &apos;nnet::dense_backpass&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;&apos; requested here
+    nnet::dense_backpass&lt;layer2_t, input_t, config2&gt;(layer2_out_grads, fc1_input_grads, fc1_input, w2, b2);
+    ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:166:7: note: candidate function
+      operator&lt;&lt;(long __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:170:7: note: candidate function
+      operator&lt;&lt;(unsigned long __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:174:7: note: candidate function
+      operator&lt;&lt;(bool __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:178:7: note: candidate function
+      operator&lt;&lt;(short __n);
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:181:7: note: candidate function
+      operator&lt;&lt;(unsigned short __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:189:7: note: candidate function
+      operator&lt;&lt;(int __n);
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:192:7: note: candidate function
+      operator&lt;&lt;(unsigned int __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:201:7: note: candidate function
+      operator&lt;&lt;(long long __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:205:7: note: candidate function
+      operator&lt;&lt;(unsigned long long __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:210:7: note: candidate function
+      operator&lt;&lt;(double __f)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:214:7: note: candidate function
+      operator&lt;&lt;(float __f)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:222:7: note: candidate function
+      operator&lt;&lt;(long double __f)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:461:5: note: candidate function [with _Traits = std::char_traits&lt;char&gt;]
+    operator&lt;&lt;(basic_ostream&lt;char, _Traits&gt;&amp; __out, char __c)
+    ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:455:5: note: candidate function [with _CharT = char, _Traits = std::char_traits&lt;char&gt;]
+    operator&lt;&lt;(basic_ostream&lt;_CharT, _Traits&gt;&amp; __out, char __c)
+    ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:467:5: note: candidate function [with _Traits = std::char_traits&lt;char&gt;]
+    operator&lt;&lt;(basic_ostream&lt;char, _Traits&gt;&amp; __out, signed char __c)
+    ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:472:5: note: candidate function [with _Traits = std::char_traits&lt;char&gt;]
+    operator&lt;&lt;(basic_ostream&lt;char, _Traits&gt;&amp; __out, unsigned char __c)
+    ^
+In file included from firmware/myproject.cpp:1:
+In file included from firmware/myproject.cpp:21:
+In file included from firmware/myproject.h:38:
+firmware/autograd/nnet_dense_backprop.h:51:51: error: use of overloaded operator &apos;&lt;&lt;&apos; is ambiguous (with operand types &apos;basic_ostream&lt;char, std::char_traits&lt;char&gt; &gt;&apos; and &apos;ap_fixed&lt;16, 6, 5, 3, 0&gt;&apos;)
+            std::cout &lt;&lt; &quot;data_in[&quot; &lt;&lt; ii &lt;&lt; &quot;]=&quot; &lt;&lt; data_in[ii] &lt;&lt; std::endl;
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:166:7: note: candidate function
+      operator&lt;&lt;(long __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:170:7: note: candidate function
+      operator&lt;&lt;(unsigned long __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:174:7: note: candidate function
+      operator&lt;&lt;(bool __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:178:7: note: candidate function
+      operator&lt;&lt;(short __n);
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:181:7: note: candidate function
+      operator&lt;&lt;(unsigned short __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:189:7: note: candidate function
+      operator&lt;&lt;(int __n);
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:192:7: note: candidate function
+      operator&lt;&lt;(unsigned int __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:201:7: note: candidate function
+      operator&lt;&lt;(long long __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:205:7: note: candidate function
+      operator&lt;&lt;(unsigned long long __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:210:7: note: candidate function
+      operator&lt;&lt;(double __f)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:214:7: note: candidate function
+      operator&lt;&lt;(float __f)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:222:7: note: candidate function
+      operator&lt;&lt;(long double __f)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:461:5: note: candidate function [with _Traits = std::char_traits&lt;char&gt;]
+    operator&lt;&lt;(basic_ostream&lt;char, _Traits&gt;&amp; __out, char __c)
+    ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:455:5: note: candidate function [with _CharT = char, _Traits = std::char_traits&lt;char&gt;]
+    operator&lt;&lt;(basic_ostream&lt;_CharT, _Traits&gt;&amp; __out, char __c)
+    ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:467:5: note: candidate function [with _Traits = std::char_traits&lt;char&gt;]
+    operator&lt;&lt;(basic_ostream&lt;char, _Traits&gt;&amp; __out, signed char __c)
+    ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:472:5: note: candidate function [with _Traits = std::char_traits&lt;char&gt;]
+    operator&lt;&lt;(basic_ostream&lt;char, _Traits&gt;&amp; __out, unsigned char __c)
+    ^
+In file included from firmware/myproject.cpp:1:
+In file included from firmware/myproject.cpp:21:
+In file included from firmware/myproject.h:38:
+firmware/autograd/nnet_dense_backprop.h:52:35: error: use of overloaded operator &apos;&lt;&lt;&apos; is ambiguous (with operand types &apos;basic_ostream&lt;char, std::char_traits&lt;char&gt; &gt;&apos; and &apos;ap_fixed&lt;16, 6, 5, 3, 0&gt;&apos;)
+            std::cout &lt;&lt; &quot;cache=&quot; &lt;&lt; cache &lt;&lt; &quot; for ii=&quot; &lt;&lt; ii &lt;&lt; &quot; jj=&quot; &lt;&lt; jj &lt;&lt; std::endl;
+            ~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:166:7: note: candidate function
+      operator&lt;&lt;(long __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:170:7: note: candidate function
+      operator&lt;&lt;(unsigned long __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:174:7: note: candidate function
+      operator&lt;&lt;(bool __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:178:7: note: candidate function
+      operator&lt;&lt;(short __n);
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:181:7: note: candidate function
+      operator&lt;&lt;(unsigned short __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:189:7: note: candidate function
+      operator&lt;&lt;(int __n);
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:192:7: note: candidate function
+      operator&lt;&lt;(unsigned int __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:201:7: note: candidate function
+      operator&lt;&lt;(long long __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:205:7: note: candidate function
+      operator&lt;&lt;(unsigned long long __n)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:210:7: note: candidate function
+      operator&lt;&lt;(double __f)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:214:7: note: candidate function
+      operator&lt;&lt;(float __f)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:222:7: note: candidate function
+      operator&lt;&lt;(long double __f)
+      ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:461:5: note: candidate function [with _Traits = std::char_traits&lt;char&gt;]
+    operator&lt;&lt;(basic_ostream&lt;char, _Traits&gt;&amp; __out, char __c)
+    ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:455:5: note: candidate function [with _CharT = char, _Traits = std::char_traits&lt;char&gt;]
+    operator&lt;&lt;(basic_ostream&lt;_CharT, _Traits&gt;&amp; __out, char __c)
+    ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:467:5: note: candidate function [with _Traits = std::char_traits&lt;char&gt;]
+    operator&lt;&lt;(basic_ostream&lt;char, _Traits&gt;&amp; __out, signed char __c)
+    ^
+/fpga/cad/xilinx/Vivado/2019.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/ostream:472:5: note: candidate function [with _Traits = std::char_traits&lt;char&gt;]
+    operator&lt;&lt;(basic_ostream&lt;char, _Traits&gt;&amp; __out, unsigned char __c)
+    ^
+In file included from firmware/myproject.cpp:1:
+In file included from firmware/myproject.cpp:21:
+In file included from firmware/myproject.h:38:
+firmware/autograd/nnet_dense_backprop.h:63:66: error: member reference base type &apos;char *&apos; is not a structure or union
+            printf(&quot; %.10s |&quot;, grads_out[ii].to_string(10, true).c_str());
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+firmware/autograd/nnet_dense_backprop.h:66:67: error: member reference base type &apos;char *&apos; is not a structure or union
+            printf(&quot; %.10s |&quot;, weights[index].to_string(10, true).c_str());
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+5 errors generated."/>
+</Messages>

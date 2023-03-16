@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1675119113000">
+  <ports id="1" name="fc1_input_V" type="PortType" originalName="fc1_input.V" bitwidth="16">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="layer3_out_0_V" type="PortType" originalName="layer3_out[0].V" bitwidth="16" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="3" name="const_size_in_1" type="PortType" originalName="const_size_in_1" bitwidth="16" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="4" name="const_size_out_1" type="PortType" originalName="const_size_out_1" bitwidth="16" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="24" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@ports.2"/>
+  <edges id="28" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@ports.3"/>
+  <edges id="32" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="35" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="38" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="42" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@ports.1"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="49" pipe_depth="1" RegionName="myproject">
+    <basic_blocks id="21" name="myproject" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="const_size_in_1_write_ln37" lineNumber="37" fileName="firmware/myproject.cpp" fileDirectory=".." contextFuncName="myproject" opcode="write" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="37" fileDirectory="/home/manuelbv/ETHW/tutorials/custom/model_dummy_forward/hls4ml_prj" functionName="myproject"/>
+        <dataOutputObjs>const_size_in_1</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="const_size_out_1_write_ln38" lineNumber="38" fileName="firmware/myproject.cpp" fileDirectory=".." contextFuncName="myproject" opcode="write" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="38" fileDirectory="/home/manuelbv/ETHW/tutorials/custom/model_dummy_forward/hls4ml_prj" functionName="myproject"/>
+        <dataOutputObjs>const_size_out_1</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="fc1_input_V_read" bitwidth="16" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <dataInputObjs>fc1_input_V</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="layer2_out_0_V" rtlName="layer2_out_0_V_dense_latency_ap_fixed_ap_fixed_config2_0_0_fu_69" bitwidth="15" opcode="call" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>dense_latency_ap_fixed_ap_fixed_config2_0_0</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="call_ret6" lineNumber="60" fileName="firmware/myproject.cpp" fileDirectory=".." rtlName="call_ret6_linear_ap_fixed_ap_fixed_16_6_0_0_0_linear_config3_s_fu_75" contextFuncName="myproject" bitwidth="15" opcode="call" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="60" fileDirectory="/home/manuelbv/ETHW/tutorials/custom/model_dummy_forward/hls4ml_prj" functionName="myproject"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <constName>linear_ap_fixed_ap_fixed_16_6_0_0_0_linear_config3_s</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="layer3_out_0_V_write_ln60" lineNumber="60" fileName="firmware/myproject.cpp" fileDirectory=".." contextFuncName="myproject" opcode="write" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="60" fileDirectory="/home/manuelbv/ETHW/tutorials/custom/model_dummy_forward/hls4ml_prj" functionName="myproject"/>
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>layer3_out_0_V</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="_ln62" lineNumber="62" fileName="firmware/myproject.cpp" fileDirectory=".." contextFuncName="myproject" opcode="ret" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="firmware/myproject.cpp" linenumber="62" fileDirectory="/home/manuelbv/ETHW/tutorials/custom/model_dummy_forward/hls4ml_prj" functionName="myproject"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="firmware/myproject.cpp">
+        <validLinenumbers>37</validLinenumbers>
+        <validLinenumbers>38</validLinenumbers>
+        <validLinenumbers>60</validLinenumbers>
+        <validLinenumbers>62</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <expressionNodes realName="sext_ln60_fu_81">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="call_ret6_linear_ap_fixed_ap_fixed_16_6_0_0_0_linear_config3_s_fu_75">
+    <nodeIds>17</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="layer2_out_0_V_dense_latency_ap_fixed_ap_fixed_config2_0_0_fu_69">
+    <nodeIds>16</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="fc1_input_V_read_read_fu_56">
+    <nodeIds>15</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln38_write_fu_48">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln60_write_fu_62">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln37_write_fu_40">
+    <nodeIds>13</nodeIds>
+  </ioNodes>
+  <ioPorts name="const_size_in_1">
+    <contents name="write">
+      <nodeIds>13</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="const_size_out_1">
+    <contents name="write">
+      <nodeIds>14</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="fc1_input_V">
+    <contents name="read">
+      <nodeIds>15</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="layer3_out_0_V">
+    <contents name="write">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="myproject" mII="1" mDepth="1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>21</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

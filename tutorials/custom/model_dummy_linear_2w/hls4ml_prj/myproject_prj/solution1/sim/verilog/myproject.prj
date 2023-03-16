@@ -1,0 +1,13 @@
+sv work "glbl.v"
+sv xil_defaultlib "myproject_w4_V.v"
+sv xil_defaultlib "linear_ap_fixed_ap_fixed_16_6_0_0_0_linear_config3_s.v"
+sv xil_defaultlib "dense_latency_ap_fixed_ap_fixed_config2_0_0_0.v"
+sv xil_defaultlib "linear_ap_fixed_ap_fixed_16_6_0_0_0_linear_config5_s.v"
+sv xil_defaultlib "myproject_mul_mul_16s_16s_26_1_1.v"
+sv xil_defaultlib "dense_latency_ap_fixed_ap_fixed_config4_0_0.v"
+sv xil_defaultlib "myproject_mul_mul_16s_16s_32_1_1.v"
+sv xil_defaultlib "myproject.v"
+sv xil_defaultlib "AESL_automem_layer5_out_ground_truth_V.v"
+sv xil_defaultlib "myproject_w2_V.v"
+sv xil_defaultlib "myproject.autotb.v"
+
