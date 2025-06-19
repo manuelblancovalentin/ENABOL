@@ -14,3 +14,8 @@ try:
     print(f'[INFO] - hls4ml version: {hls4ml.__version__}')
 except ImportError as e:
     raise ImportError(f"Failed to import hls4ml. Ensure that the hls4ml package is correctly installed in {LOCAL_HLS4ML_DIR}.") from e
+
+
+
+""" Import submodules """
+from .  import dataset
