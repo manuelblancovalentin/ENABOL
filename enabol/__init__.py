@@ -19,3 +19,4 @@ except ImportError as e:
 
 """ Import submodules """
 from .  import dataset
+from . import nn
