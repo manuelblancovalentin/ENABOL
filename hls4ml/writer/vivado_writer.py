@@ -441,21 +441,17 @@ class VivadoWriter(Writer):
                     # [@manuelbv]: Import backprop implementations for diff layer types
                     newline += "// [@manuelbv]: Import backprop implementations\n"
 
-                    inputs = model.get_input_variables()
-                    outputs = model.get_output_variables()
-                    # [@manuelbv]: List with all types of layers we are using in the model 
-                    unique_layer_types = ['activation']
-                    for layer in model.get_layers():
-                        vars = layer.get_variables()
-                        for var in vars:
-                            if var not in inputs and var not in outputs:
-                                layer_type = layer.attributes['class_name']
-                                if layer_type not in unique_layer_types:
-                                    unique_layer_types.append(layer_type)
+                    # Get unique layer types
+                    unique_layer_types = set([layer.attributes['class_name'] for layer in model.get_layers()])
+                    # Make sure to Pop "InputLayer" and "OutputLayer"
+                    unique_layer_types.discard('InputLayer')
+                    unique_layer_types.discard('OutputLayer')
+
+                    # [@manuelbv]: Loop thru unique layer types and add the corresponding backprop header
                     for ut in unique_layer_types:
-                        if ut.lower() == "qdense" or ut.lower() == "dense":
+                        if "dense" in ut.lower():
                             newline += '#include "autograd/nnet_dense_backprop.h"\n'
-                        elif ut.lower() == "activation" or ut.lower() == "relu":
+                        elif "activation" in ut.lower() or "relu" in ut.lower(): # [@manuelblancovalentin]: Expand this later
                             newline += '#include "autograd/nnet_activation_backprop.h"\n'
                         else:
                             raise ValueError(f"Unknown type of layer {ut}")
