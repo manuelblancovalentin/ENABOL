@@ -1,5 +1,5 @@
 # Typing
-from typing import Tuple, Union
+from typing import Tuple, Union, Optional, Any
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 
@@ -19,10 +19,11 @@ class BaseModel(ABC):
     optimizer: Union[str, tf.keras.optimizers.Optimizer] = "adam"
     metrics: list = field(default_factory=lambda: [])
     model: tf.keras.Model = field(init=False)
-    input_shape: Tuple[int] = field(init=False)
-    output_shape: Tuple[int] = field(init=False)
+    input_shape: Tuple[int, ...] = field(init=False)
+    output_shape: Tuple[int, ...] = field(init=False)
     is_classification: bool = field(init=False)
     use_bias: bool = True
+    name: Optional[str] = None
 
     @abstractmethod
     def build_model(self) -> tf.keras.Model:
@@ -36,6 +37,13 @@ class BaseModel(ABC):
         self.output_shape = self.dataset.Y.shape[1:]
         self.is_classification = self.dataset.output_type in {DataType.D1_CLASS, DataType.D2_CLASS, DataType.IMAGE_CLASS}
         self.model = self.build_model()
+
+        # If model name is None, set to <class_name>_<inputs>_0w<hidden_units_layer0>_1w<hidden_units_layer1>_...<outputs>
+        if self.name is None:
+            self.name = self._get_alias()
+
+    def _get_alias(self):
+        return f"{self.__class__.__name__}_i{np.prod(self.input_shape)}_o{np.prod(self.output_shape)}"
 
     def forward(self, X: np.ndarray) -> np.ndarray:
         return self.model.predict(X)
@@ -58,8 +66,7 @@ class BaseModel(ABC):
         model = tf.keras.Model(inputs=inputs, outputs=outputs)
         model.compile(optimizer=self.optimizer, loss=self.loss, metrics=self.metrics)
         return model
-
-
+    
 @dataclass
 class MLPModel(BaseModel):
     """Multi-layer perceptron with configurable units and activations.
@@ -75,8 +82,30 @@ class MLPModel(BaseModel):
     -----
     
     """
-    units: list[int] = field(default_factory=lambda: [1])
-    activations: Union[bool, list[str]] = True
+    units: 'list[int]' = field(default_factory=lambda: [1])
+    activations: Union[bool, 'list[str]', 'Any'] = True
+    # set the default name 
+    name: Optional[str] = None
+
+    def _get_alias(self):
+        # Inputs:
+        i = np.prod(self.input_shape)
+        # Outputs:
+        o = np.prod(self.output_shape)
+        # Units per layer
+        units_str = "_".join([f"{ily}w{u}" for ily, u in enumerate(self.units)])
+        # Activations
+        act_str = ""
+        if isinstance(self.activations, list):
+            # Keep acts that are not None
+            activs = [act for act in self.activations if act is not None]
+            if np.any(activs):
+                act_str = f'_{activs[0]}'
+        elif self.activations is True:
+            act_str = "_tanh"
+        
+        # Return the alias
+        return f"{self.__class__.__name__}_i{i}_o{o}_{units_str}{act_str}"
 
     def build_model(self) -> tf.keras.Model:
         """Builds a tf.keras.Model using the functional API."""
@@ -90,6 +119,9 @@ class MLPModel(BaseModel):
             activs = ['tanh'] * len(self.units)
         else:
             activs = [None] * len(self.units)
+
+        # Set back to structure
+        self.activations = activs
 
         for units, act in zip(self.units, activs):
             x = tf.keras.layers.Dense(units, activation=act, use_bias=self.use_bias)(x)
