@@ -20,3 +20,5 @@ except ImportError as e:
 """ Import submodules """
 from .  import dataset
 from . import nn
+from . import dtypes
+from .compile import compile_model, _check_backend
