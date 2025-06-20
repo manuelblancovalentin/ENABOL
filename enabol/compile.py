@@ -10,26 +10,41 @@ import json
 import subprocess
 
 # Import hls4ml 
-from enabol import hls4ml
+from enabol import hls4ml, ENABOL_CONFIG
 from .nn import BaseModel
 from .dtypes import HLSDataType
 
+
+def _safe_set_env_var(var_name, value):
+    """Safely set an environment variable."""
+    if var_name not in os.environ:
+        os.environ[var_name] = value
+        print(f'[INFO] - Set {var_name} to {value}')
+    elif value not in os.environ[var_name]:
+        os.environ[var_name] += ':' + value
+        print(f'[INFO] - Added {value} to {var_name} environment variable')
+    else:
+        print(f'[INFO] - {value} already in {var_name} environment variable')
+
+def _set_compiler_env_vars(backend: str):
+    # Ensure paths as in config:
+    for key, value in ENABOL_CONFIG['compiler']['basic'].items():
+        _safe_set_env_var(key, value)
+
+    # Now for backend 
+    for key, value in ENABOL_CONFIG['compiler'][backend].items():
+        _safe_set_env_var(key, value)
+
+
 """ Check if the specified backend is in path. """
 def _check_backend(backend: str = 'vivado', PATH = '/fpga/cad/xilinx/Vivado/2019.2/bin'):
-    # Add lib in case it's not in path already
-    if 'LD_LIBRARY_PATH' not in os.environ:
-        os.environ['LD_LIBRARY_PATH'] = '/usr/lib/x86_64-linux-gnu:/usr/lib32:'
-    if '/usr/lib/x86_64-linux-gnu:/usr/lib32:' not in os.environ['LD_LIBRARY_PATH']:
-        os.environ['LD_LIBRARY_PATH'] = '/usr/lib/x86_64-linux-gnu:/usr/lib32:' + os.environ['LD_LIBRARY_PATH']
-    if 'LIBRARY_PATH' not in os.environ:
-        os.environ['LIBRARY_PATH'] = '/usr/lib/x86_64-linux-gnu:/usr/lib32:'
-    if '/usr/lib/x86_64-linux-gnu:/usr/lib32:' not in os.environ['LIBRARY_PATH']:
-        # Add lib to LIBRARY_PATH if not already present
-        os.environ['LIBRARY_PATH'] = '/usr/lib/x86_64-linux-gnu:/usr/lib32:' + os.environ['LIBRARY_PATH']
     
     # Make sure we apply some mapping (e.g. 'Vivado' -> 'vivado')
     backend = {'Vivado': 'vivado'}.get(backend, backend)
 
+    # Set compiler environment variables
+    _set_compiler_env_vars(backend)
+    
     process = subprocess.Popen(['which', backend], stdout=subprocess.PIPE)
     output, errors = process.communicate() # Wait for process to finish and get output
     
