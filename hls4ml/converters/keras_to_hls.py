@@ -227,6 +227,141 @@ def keras_to_hls(config):
 
     #print(model_arch)
 
+    #[@manuelblancovalentin]: Updated code using enabol. June/19/2025
+    skip_layers = ['Dropout']
+    supported_layers = get_supported_keras_layers() + skip_layers
+    input_layers = None
+    output_layers = None
+    # Init layer config
+    layer_config = None 
+    if model_arch['class_name'] == 'Sequential':
+        raise Exception('Sequential models are not supported yet. Please use the Functional API or Model API to define your model.')
+        # print('Interpreting Sequential')
+        # layer_config = model_arch['config']
+        # if 'layers' in layer_config: # Newer Keras versions have 'layers' in 'config' key
+        #     layer_config = layer_config['layers']
+        # # Sequential doesn't have InputLayer in TF < 2.3 (Keras 2.4.0)
+        # if layer_config[0]['class_name'] != 'InputLayer':
+        #     input_layer = {}
+        #     input_layer['name'] = 'input1'
+        #     input_layer['class_name'] = 'InputLayer'
+        #     input_layer['input_shape'] = layer_config[0]['config']['batch_input_shape'][1:]
+        #     layer_list.append(input_layer)
+        #     print('Input shape:', input_layer['input_shape'])
+        #     input_layers = [input_layer['name']]
+        # output_layers = layer_
+    elif model_arch['class_name'] in ['Model', 'Functional']: # TF >= 2.3 calls it 'Funcational' API
+        print('Interpreting Model')
+        layer_config = model_arch['config']['layers']
+        input_layers = [ inp[0] for inp in model_arch['config']['input_layers'] ]
+        output_layers = [ out[0] for out in model_arch['config']['output_layers'] ]
+
+        # We need to populate the layer_list
+        for keras_layer in layer_config:
+            # Get class 
+            keras_class = keras_layer['class_name']
+
+            # Init names and shapes (if InputLayer this can be None)
+            input_shapes = None
+            input_names = None
+
+            def expand_dict_recursive(d):
+                """Expand a dict recursively to handle nested dicts."""
+                expanded = {}
+                if isinstance(d, list):
+                    # If the input is a list, expand each item
+                    return [expand_dict_recursive(item) if isinstance(item, dict) else item for item in d]
+                for key, value in d.items():
+                    if isinstance(value, dict):
+                        expanded.update(expand_dict_recursive(value))
+                    elif isinstance(value, list):
+                        # Loop thru the list and expand dicts
+                        expanded[key] = [expand_dict_recursive(item) if isinstance(item, dict) else item for item in value]
+                    elif isinstance(value, tuple):
+                        # Convert tuple to list
+                        expanded[key] = [expand_dict_recursive(item) if isinstance(item, dict) else item for item in value]
+                    else:
+                        expanded[key] = value
+                return expanded
+            
+            if 'inbound_nodes' in keras_layer and len(keras_layer['inbound_nodes']) > 0:
+                for node in keras_layer['inbound_nodes']:
+                    # convert args/kwargs to dict 
+                    if isinstance(node, dict):
+                        if 'args' in node and 'kwargs' in node:
+                            subconf = expand_dict_recursive(node['args'])
+                            #subconf.update(expand_dict_recursive(node['kwargs']))
+                            #node = node['args'] + [node['kwargs']]
+                            if len(subconf) > 0 and not isinstance(subconf, dict):
+                                subconf = subconf[0]
+                            if input_names is None:
+                                input_names = []
+                            if 'keras_history' in subconf:
+                                input_names.append(subconf['keras_history'][0])
+                                if 'shape' in subconf:
+                                    if input_shapes is None:
+                                        input_shapes = []
+                                    input_shapes.append(subconf['shape'])
+
+            layer, output_shape = layer_handlers[keras_class](keras_layer, input_names, input_shapes, reader, config)
+
+            # print layer info
+            print('Layer name: {}, layer type: {}, input shapes: {}, output shape: {}'.format(layer['name'], layer['class_name'], input_shapes, output_shape))
+            
+            # Add to layer_list
+            layer_list.append(layer)
+            
+
+            # In case this layer has some activation embedded on it, and in case it's not linear, we need to
+            # add it too.
+            if 'activation' in keras_layer['config']:
+                act_class = keras_layer['config']['activation']
+                if act_class in ['linear']:
+                    print(f'[INFO] - Skipping activation layer {act_class} for layer {layer["name"]}')
+                elif act_class in ['relu']: # 'softmax', 'sigmoid', 'tanh', 'relu', 'elu', 'selu', 'leakyrelu', 'prelu', 'thresholdedrelu'
+                    act_layer = {}
+                    act_layer['name'] = layer['name'] + '_' + act_class
+                    act_layer['activation'] = act_class
+                    if 'activ_param' in keras_layer['config']:
+                        act_layer['activ_param'] = keras_layer['config']['activ_param']
+                        act_layer['class_name'] = keras_layer['config']['activation']
+                    elif act_class == 'softmax':
+                        act_layer['class_name'] = 'Softmax'
+                        act_layer['axis'] = -1
+                    else:
+                        act_layer['class_name'] = 'Activation'
+                    #inputs_map[layer['name']] = act_layer['name']
+                    if output_layers is not None and layer['name'] in output_layers:
+                        output_layers = [act_layer['name'] if name == layer['name'] else name for name in output_layers]
+                    layer_list.append(act_layer)
+                else:
+                    raise Exception('Unsupported activation function {} in layer {}'.format(act_class, layer['name']))
+            
+            assert(output_shape is not None)
+
+
+    #################
+    ## Generate HLS
+    #################
+
+    print('Creating HLS model')
+    hls_model = HLSModel(config, reader, layer_list, input_layers, output_layers)
+    return hls_model
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     #Define layers to skip for conversion to HLS
     skip_layers = ['Dropout']
     #All supported layers
@@ -271,17 +406,32 @@ def keras_to_hls(config):
 
     print('Topology:')
     for keras_layer in layer_config:
-        if 'batch_input_shape' in keras_layer['config']:
-            if 'inbound_nodes' in keras_layer and len(keras_layer['inbound_nodes']) > 0:
-                input_shapes = [output_shapes[inbound_node[0]] for inbound_node in keras_layer['inbound_nodes'][0]]
-            else:
-                input_shapes = [keras_layer['config']['batch_input_shape']]
-        else:
-            if 'inbound_nodes' in keras_layer:
-                input_shapes = [output_shapes[inbound_node[0]] for inbound_node in keras_layer['inbound_nodes'][0]]
-            else:
-                # Sequential model, so output_shape from the previous layer is still valid 
-                input_shapes = [output_shape]
+        
+        
+        import enabol
+        input_shapes = enabol.utils.get_inbound_input_shapes(keras_layer)
+        
+        
+        
+        
+        # if 'batch_input_shape' in keras_layer['config']:
+        #     if 'inbound_nodes' in keras_layer and len(keras_layer['inbound_nodes']) > 0:
+        #         input_shapes = [output_shapes[inbound_node[0]] for inbound_node in keras_layer['inbound_nodes'][0]]
+        #     else:
+        #         input_shapes = [keras_layer['config']['batch_input_shape']]
+        # elif 'batch_shape' in keras_layer['config']:
+        #     #[@manuelblancovalentin]: Apparently keras renamed this in some later version.
+        #     if 'inbound_nodes' in keras_layer and len(keras_layer['inbound_nodes']) > 0:
+        #         input_shapes = [output_shapes[inbound_node[0]] for inbound_node in keras_layer['inbound_nodes'][0]]
+        #     else:
+        #         input_shapes = [keras_layer['config']['batch_shape']]
+        # else:
+        #     if 'inbound_nodes' in keras_layer:
+        #         input_shapes = [output_shapes[inbound_node[0]] for inbound_node in keras_layer['inbound_nodes'][0]]
+        #         #[@manuelblancovalentin]: What if inbound nodes is an empty list?
+        #     else:
+        #         # Sequential model, so output_shape from the previous layer is still valid 
+        #         input_shapes = [output_shape]
 
         keras_class = keras_layer['class_name']
 

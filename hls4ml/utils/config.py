@@ -240,7 +240,7 @@ def config_from_keras_model(model, granularity='model', default_precision='ap_fi
     model_config['Trainable'] = trainable
 
     # [@manuelbv]: CHANGELOG_a.10 I added the flag "trainable = False" to allow the user to implement trainable layers
-    model_config['Losses'] = list(model.loss)
+    model_config['Losses'] = model.loss if isinstance(model.loss, list) else [model.loss]
 
     config['Model'] = model_config
     

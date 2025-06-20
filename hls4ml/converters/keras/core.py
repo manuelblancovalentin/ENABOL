@@ -12,11 +12,24 @@ def parse_input_layer(keras_layer, input_names, input_shapes, data_reader, confi
 
     layer = parse_default_keras_layer(keras_layer, input_names)
 
-    layer['input_shape'] = keras_layer['config']['batch_input_shape'][1:]
+    #[@manuelblancovalentin]: Change of name from 'batch_input_shape' to 'batch_shape' 
+    if 'batch_input_shape' in keras_layer['config']:
+        layer['input_shape'] = keras_layer['config']['batch_input_shape'][1:]
+    elif 'batch_shape' in keras_layer['config']:
+        layer['input_shape'] = keras_layer['config']['batch_shape'][1:]
+    else:
+        raise Exception('InputLayer must have batch_input_shape or batch_shape defined in its config')
     if keras_layer['config']['dtype'] == 'int32':
         layer['type_name'] = 'integer_input_t'
         layer['precision'] = IntegerPrecisionType(width=32)
-    output_shape = keras_layer['config']['batch_input_shape']
+
+    #[@manuelblancovalentin]: Change of name from 'batch_input_shape' to 'batch_shape'
+    if 'batch_shape' in keras_layer['config']:
+        output_shape = keras_layer['config']['batch_shape']
+    elif 'batch_input_shape' in keras_layer['config']:
+        output_shape = keras_layer['config']['batch_input_shape']
+    else:
+        raise Exception('InputLayer must have batch_input_shape or batch_shape defined in its config')
     
     return layer, output_shape
 
