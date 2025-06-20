@@ -124,7 +124,22 @@ class MLPModel(BaseModel):
         self.activations = activs
 
         for units, act in zip(self.units, activs):
-            x = tf.keras.layers.Dense(units, activation=act, use_bias=self.use_bias)(x)
+            x = tf.keras.layers.Dense(units, activation=None, use_bias=self.use_bias)(x)
+
+            # If activation is not None, apply it
+            if act is not None:
+                # If it's string try to pull it from keras.activations
+                if isinstance(act, str):
+                    try:
+                        act = tf.keras.activations.get(act)
+                        x = act(x)
+                    except ValueError as e:
+                        print(f"[WARNING] - Activation '{act}' not found. Using None instead.")
+                elif hasattr(act, '__call__'):
+                    # If it's callable, just call it
+                    x = act(x)
+                else:
+                    raise ValueError(f"Invalid activation type: {type(act)}. Must be str or callable.")
 
         # Now call super to finalize the model
         return super()._build_model(inputs, x)
